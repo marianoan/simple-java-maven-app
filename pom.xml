@@ -30,20 +30,6 @@
 		</url>
 	</scm>
 
-	<plugin>
-		<artifactId>maven-release-plugin</artifactId>
-		<configuration>
-			<!-- This is a 2.0 beta 6 bug. By default the goals are 'clean verify', so the modules
-			are not installed, so the dependencies between modules are not met. With this configuration 
-			we force the module installation. -->
-			<preparationGoals>clean install</preparationGoals>
-			<username>${svn.username}</username>
-			<password>${svn.password}</password>
-			<tagBase>
-				https://github.com/marianoan/springbootDemo.git
-			</tagBase>
-		</configuration>
-	</plugin>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -98,6 +84,20 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<artifactId>maven-release-plugin</artifactId>
+				<configuration>
+					<!-- This is a 2.0 beta 6 bug. By default the goals are 'clean verify', so the modules
+					are not installed, so the dependencies between modules are not met. With this configuration 
+					we force the module installation. -->
+					<preparationGoals>clean install</preparationGoals>
+					<username>${svn.username}</username>
+					<password>${svn.password}</password>
+					<tagBase>
+						https://github.com/marianoan/springbootDemo.git
+					</tagBase>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
