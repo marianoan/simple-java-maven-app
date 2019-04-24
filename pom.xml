@@ -19,13 +19,13 @@
 
 	<scm>
 		<connection>
-			scm:git:https://marianoan:Opcon232@github.com/marianoan/springbootDemo.git
+			scm:git:git://marianoan:Opcon232@github.com/marianoan/springbootDemo.git
 		</connection>
 		<developerConnection>
-			scm:git:https://marianoan:Opcon232@github.com/marianoan/springbootDemo.git
+			scm:git:git://marianoan:Opcon232@github.com/marianoan/springbootDemo.git
 		</developerConnection>
 		<url>
-			https://github.com/marianoan/springbootDemo.git
+			https://github.com/marianoan/springbootDemo
 		</url>
 	  <tag>HEAD</tag>
   </scm>
