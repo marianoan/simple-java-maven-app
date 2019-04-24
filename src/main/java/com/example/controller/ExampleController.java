@@ -24,10 +24,17 @@ public class ExampleController {
 	
 	
 	@RequestMapping("/example/{code}")
-	public ResponseEntity<String> getAllAlgo(@PathVariable("code") String code) {		
-		List<Productos> response = exampleService.getProductos(code);
-		//return new ResponseEntity<>(response, HttpStatus.OK);
-		return new ResponseEntity<>("Hola " + code, HttpStatus.OK);
+       public ResponseEntity<String> getAllAlgo(@PathVariable("code") String code) {            
+             //List<Productos> response = exampleService.getProductos(code);
+             //return new ResponseEntity<>(response, HttpStatus.OK);
+             return new ResponseEntity<>("Prueba de API con un parametro :  " + code, HttpStatus.OK);
+ 
+       }
+      
+	@RequestMapping("/example")
+	public ResponseEntity<String> getOne() {
+		
+			return new ResponseEntity<>("Prueba de API sin parametro ", HttpStatus.OK);
 
 	}
 
