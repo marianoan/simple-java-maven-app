@@ -30,6 +30,19 @@
 		</url>
 	</scm>
 
+	<distributionManagement>
+		<repository>
+			<id>central</id>
+			<name>artifactory-1-vm-releases</name>
+			<url>http://34.66.41.80/artifactory/springBootArtifacts</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>artifactory-1-vm-snapshots</name>
+			<url>http://34.66.41.80/artifactory/springBootArtifacts</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
