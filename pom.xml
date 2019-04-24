@@ -4,7 +4,7 @@
 
 	<groupId>com.example</groupId>
 	<artifactId>springBootDemo</artifactId>
-	<version>0.1.1-SNAPSHOT</version>
+	<version>0.1.1</version>
 	<packaging>jar</packaging>
 
 	<name>springBootDemo</name>
@@ -27,6 +27,7 @@
 		<url>
 			https://github.com/marianoan/springbootDemo
 		</url>
+    <tag>springBootDemo-0.1.1</tag>
   </scm>
 
 	<distributionManagement>
