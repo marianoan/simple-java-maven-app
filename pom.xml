@@ -27,7 +27,6 @@
 		<url>
 			https://github.com/marianoan/springbootDemo
 		</url>
-	  <tag>HEAD</tag>
   </scm>
 
 	<distributionManagement>
