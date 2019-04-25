@@ -22,7 +22,7 @@ public class ExampleControllerTest {
 		
 		assertNotNull(result);
 		assertEquals(HttpStatus.OK, result.getStatusCode());
-		assertEquals("Prueba de API con un parametro cambio 2:  algo", result.getBody());
+		assertEquals("Prueba de API con un parametro cambio:  algo", result.getBody());
 
 
 	}
