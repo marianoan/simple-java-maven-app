@@ -19,11 +19,10 @@ public class ExampleControllerTest {
 	@Test
 	public void getAllAlgoTest() {
 		ResponseEntity<String> result = controller.getAllAlgo("algo");
-		ResponseEntity<String> reference = new ResponseEntity<>("Prueba de API con un parametro :  " + "algo", HttpStatus.OK);
 		
 		assertNotNull(result);
 		assertEquals(HttpStatus.OK, result.getStatusCode());
-		assertEquals("Prueba de API con un parametro :  algo", result.getBody());
+		assertEquals("Prueba de API con un parametro cambio :  algo", result.getBody());
 
 
 	}
