@@ -27,7 +27,7 @@ public class ExampleController {
        public ResponseEntity<String> getAllAlgo(@PathVariable("code") String code) {            
              //List<Productos> response = exampleService.getProductos(code);
              //return new ResponseEntity<>(response, HttpStatus.OK);
-             return new ResponseEntity<>("Prueba de API con un parametro :  " + code, HttpStatus.OK);
+             return new ResponseEntity<>("Prueba de API con un parametro cambio:  " + code, HttpStatus.OK);
  
        }
       
